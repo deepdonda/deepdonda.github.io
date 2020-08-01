@@ -1,0 +1,119 @@
+.form
+{
+    
+   
+  border-radius: 25px;
+  background: #D1E8E2;
+  position: relative;
+  margin:  auto;
+  padding: 20px 20px 20px;
+}
+.a
+{
+    
+  display: flex;
+    
+}
+.b
+{
+    position: relative;
+
+    margin: auto;
+    width: 70%;
+}
+.c
+{
+    margin: auto;
+    position: relative;
+    float: right;
+    width: 30%;
+}
+.column1 {
+    padding: auto;
+    margin-left: 25px;
+    margin-right: 25px;
+  flex-basis: 100%;
+  width: 70%;
+  min-width: 500px;
+  min-height: 550px;
+  border: 10px #1abc9c solid;
+  
+}
+.column2
+{
+    border: 10px #D1E8E2 solid;
+    margin-left: 10px;
+    margin-right: 25px;
+  flex-basis: 40%;
+  width: 30%;
+ 
+    
+}
+
+@media screen and (min-width: 800px) {
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  
+}
+input[type=text] ,input[type=email] {
+  width: 100%;
+  padding: 6px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.form
+{
+    
+    border-radius: 25px;
+  backgrond: #D1E8E2;
+  position: relative;
+  margin: 0 auto;
+  padding: 20px 20px 20px;
+  width: 500px;
+}
+.button
+{
+    padding: 10px;
+    position: relative;
+    width: 60%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color:#D9B08C ;
+    height: 40px;
+    
+    
+}
+.text-line {
+    background-color: transparent;
+    color: black;
+    outline: none;
+    outline-style: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #D9B08C 2px;
+    padding: 3px 10px;
+}
+.image {
+  width: 700px;
+  //min-width: 500px;
+  height: 70%;
+  //border: 10px   aqua solid;
+  border-radius: 20px;
+  padding: auto;
+  margin: auto;
+  position: relative;
+  
+}
+.header {
+  padding: 5px;
+  text-align: center;
+  margin-bottom: 25px;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}

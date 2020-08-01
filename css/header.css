@@ -1,0 +1,101 @@
+.login{
+    
+    background-color: #116466;
+}
+.form1
+{
+    
+    background-color: #6C9132;
+    background-position: center;
+    border-style:solid;
+    border-width: 10px;
+    border-color: #617B38;
+    padding: 100px;
+    width: 400px;
+    height: 300px;
+    width: 500px;
+    
+    border-radius: 25px;
+    margin: auto;
+    position: relative;
+    
+    
+    
+}
+form
+{
+    
+    border-radius: 25px;
+  background: #D1E8E2;
+  position: relative;
+  margin: 0 auto;
+  padding: 20px 20px 20px;
+  width: 500px;
+}
+.image
+{
+    
+    position:relative;
+    border: 40px;
+    border-radius: 50%;
+    border-color: #D9B08C;
+   
+    width: 40%;
+    padding: 25px;
+}
+.text-line {
+    background-color: transparent;
+    color: black;
+    outline: none;
+    outline-style: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #D9B08C 2px;
+    padding: 3px 10px;
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.button
+{
+    padding: 10px;
+    position: relative;
+    width: 60%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color:#D9B08C ;
+    height: 40px;
+    
+    
+}
+.container
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    background-color:#f1f1f1;
+    width: 60%;
+    
+    
+}
+span.psw {
+  float: right;
+  padding-right: 10px;
+}
+span.r {
+  float: left;
+  padding-left:  10px;
+}
+.header {
+  padding: 5px;
+  text-align: center;
+  margin-bottom: 25px;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}
