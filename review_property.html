@@ -1,48 +1,125 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <a href="index.html">Home page</a>|<a href="normallogin.html">login</a>|<br><br>
-    <center><h1>Review property</h1>
-    <br>
-    <br>
-    <br>
-    <form  >
-        <table border="0">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/newcss.css">
+  <link rel="stylesheet" type="text/css" href="css/navigation.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="header">
+<h2>property renter</h2>
+<p>Where Dreams Come Home</p>
+    
+       <div class="topnav" id="myTopnav">
+  <a href="#home" >Home</a>
+  <a href="normallogin.html" >Log in</a>
+  <a href="BOOK_THIS_APARTMENT.html">book property</a>
+  <a href="review_property.html.html" class="active">review property</a>
+  <a href="uploadproperty.html">upload property</a>
+  <a href="list_of_property.html">Find property</a>
+  <a href="bookmarks_property.html">bookmarks</a>
+  <a href="aboutme.html">add personal detail</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+         <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+         </div>
+        <div class="row">  
+            <div class="column" align="right">
+               
+            <table border="0">
+                <img src="css/apartment-one.png" class="image" alt="Trulli" max-width="1000" max-height="600">
+
+                <tbody>
+                    <tr>
+                        <td><b>Owner-name:</b></td>
+                        <td><b>Rameshbhai</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>number of room:</b></td>
+                        <td><b>5</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>number batroom:</b></td>
+                        <td><b>3</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>type of property:</b></td>
+                        <td><b>flate</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>city:</b></td>
+                        <td><b>bhvanagar</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>addres:</b></td>
+                        <td><b>@@@@@@@@@@@@@@@@@</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>info</b></td>
+                        <td><b>info</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>info</b></td>
+                        <td><b>info</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>info</b></td>
+                        <td><b>info</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>info</b></td>
+                        <td><b>info</b></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            </div>
+       
+  
+  <div class="column1" >
+      <form>
+          
+          <center><h1 align="relativ">Review property</h1>
+        <table border="0" >
             
             <tbody>
                 <tr>
-                    <td>your name:</td>
-                    <td><input type="text" name="name" id="name"></td>
+                    <td><b>your name:</b></td></tr><tr>
+                    <td><input type="text" name="name" id="name" class="text-line1"></td>
                 </tr>
                 <tr>
-                    <td>E-mail:</td>
-                    <td><input type="email" name="email" id="name"></td>
+                    <td><b>E-mail:</b></td></tr><tr>
+                    <td><input  class=text-line1 type="email" name="email" id="name" ></td>
                 </tr>
                 <tr>
-                    <td>your review:</td>
+                    <td><b>your review:<b></td></tr><tr>
                     <td>
-                        <textarea name="reviwe" id="reviwe" rows="4" cols="20">
+                        <textarea name="reviwe" class="text-line1" id="reviwe" rows="4" cols="20" >
                         </textarea>
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2"><br><center><button type="submit" name="submit" value="submit">submit review</button><center></td>
+                    <td ><br><center><button type="submit" class="button" name="submit" value="submit">submit review</button><center></td>
                     
                 </tr>
             </tbody>
-        </table>
-
-    </form>
-    </center>
-    </body>
+            </table>
+        </center>
+      </form>
+  </div>
+            <div class="column2"></div>
+        </div>
+</body>
 </html>

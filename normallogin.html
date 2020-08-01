@@ -9,34 +9,75 @@ and open the template in the editor.
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/header.css">
+        <link rel="stylesheet" type="text/css" href="css/navigation.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       
     </head>
-    <body>
-        <a href="index.html">Home page</a>|<a href="normallogin.html">login</a>|<br><br>
-       <center> <h1>login</h1>
+    <body class="login">
+         <div class="header">
+<h2>property renter</h2>
+<p>Where Dreams Come Home</p>
+    
+       <div class="topnav" id="myTopnav">
+  <a href="#home" >Home</a>
+  <a href="normallogin.html" class="active">Log in</a>
+  <a href="BOOK_THIS_APARTMENT.html">book property</a>
+  <a href="uploadproperty.html">upload property</a>
+  <a href="list_of_property.html">Find property</a>
+  <a href="bookmarks_property.html">bookmarks</a>
+  <a href="aboutme.html">add personal detail</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+         <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+         </div>
+        
+        
+      
         <form >
-        <table border="0">
-            
+            <center> <center class="login1"><h1 align="relativ" >login</h1>
+                    <center> <img src="css/download.jfif" class="image"></center>
+        <table border="0"  >
+             
             <tbody>
                 <tr>
-                    <td>user name:</td>
-                    <td><input type="text" name="login" id="login"></td>
+                    <td><h3><b>user name:</b></h3></td>
+                    <td><input type="text" class="text-line" placeholder="Enter username" name="login"  required></td>
                 </tr>
                 <tr>
-                    <td>Password:</td>
-                    <td><input type="password" name="password" id="password"></td>
+                    <td><h3><b>Password:</b></h3></td>
+                    <td><input type="password" class="text-line"  placeholder="Enter password" name="password" required></td>
                 </tr>
-                <tr>
-                    <a href="register.html">Resister</a>|
-                    <a href="forgotte%20password.html">forget password</a>
-                </tr>
-                <tr>
-                    <td ><button type="submit" name="submit" value="submit">Login</button></td>
-                    <td><button type="reset" class="cancelbtn">Cancel</button></td>
-                </tr>
-            </tbody>
-        </table>
+               
+                </tbody>
+                 </table>
+                
+                    <button type="submit" name="submit" class="button" value="submit">Login</button>
+                    <div class="container" style="background-color:#f1f1f1">
+                     <span class="r"> <a href="register.html"><font color="#D9B08C" >Register</font></a></span>
+                      <span class="psw">Forgot <a href="#">password?</a></span>&nbsp;
+     
+                    
+                   
+                    </div>
+                
+            
+       
+                     </center>
         </form>
-       </center>
+           
+
 
     </body>
 </html>
