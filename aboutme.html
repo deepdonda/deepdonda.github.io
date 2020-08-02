@@ -9,22 +9,56 @@ and open the template in the editor.
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/profile.css">
+        <link rel="stylesheet" type="text/css" href="css/navigation.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <a href="index.html">Home page</a>|<a href="normallogin.html">login</a>|<br><br>
-       <center> <h1>personal info</h1>
+       <div class="header">
+<h2>property renter</h2>
+<p>Where Dreams Come Home</p>
+    
+       <div class="topnav" id="myTopnav">
+  <a href="index.html" >Home</a>
+  <a href="normallogin.html" >Log in</a>
+  <a href="BOOK_THIS_APARTMENT.html">book property</a>
+  <a href="review_property.html.html" >review property</a>
+  <a href="uploadproperty.html">upload property</a>
+  <a href="list_of_property.html">Find property</a>
+  <a href="bookmarks_property.html">bookmarks</a>
+  <a href="aboutme.html" class="active">add personal detail</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+         <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+         </div>
+        <div class="row">  
+            <div class="column" ></div>
+            <div class="column1">
+              
         <form  >
+            <center> <h1>personal info</h1>
             <table border="0">
                 
                 <tbody>
                     <tr>
                         <td>Name:</td>
-                        <td><input type="text" name="name " id="name" ></td>
+                        <td><input type="text" class="text-line1" name="name " id="name" ></td>
                     </tr>
                     <tr>
                         <td>Gender:</td>
                         <td>
-                            <select name="gender" id="gender">
+                            <select name="gender" id="gender" class="text-line1">
                                 <option>male</option>
                                 <option>female</option>
                             </select>
@@ -33,34 +67,38 @@ and open the template in the editor.
                     <tr>
                         <td>Current address:</td>
                         <td>
-                            <textarea name="address" rows="4" cols="20" id="address">
+                            <textarea name="address" class="text-line1" rows="4" cols="20" id="address">
                             </textarea>
                         </td>
                     </tr>
                     <tr>
                         <td>city:</td>
-                        <td><input type="text" name="city" id="city"></td>
+                        <td><input type="text" class="text-line1" name="city" id="city"></td>
                     </tr>
-                    <tr>
-                        <td>profile image:</td>
-                        <td><input type="file" name="profileimage" id="profileimage"></td>
-                    </tr>
+                   <tr>
                     
                         <td>qualification:</td>
-                        <td><input type="text" name="qualification" id="qualification"></td>
+                        <td><input type="text" class="text-line1" name="qualification" id="qualification"></td>
                     </tr>
                     <tr>
                         <td>occupation:</td>
-                        <td><input type="text" name="occupation" id="occupation"></td>
+                        <td><input type="text" class="text-line1" name="occupation" id="occupation"></td>
+                    </tr>
+                     <tr>
+                        <td>profile image:</td>
+                        <td><input type="file" class="text-line1" name="profileimage" id="profileimage" class="text-line1"></td>
                     </tr>
                     <tr>
-                        <td colspan="2"><button type="submit" name="submit" value="submit">submit</button></td>
+                        <td colspan="2"><center><button type="submit" name="submit" value="submit" class="but">submit</button></center></td>
                         
                     </tr>
                 </tbody>
             </table>
-
-        </form>
-       </center>
+                </center>
+        </form></div>
+            <div class="column2"></div>
+        </div>
+            
+       
     </body>
 </html>
