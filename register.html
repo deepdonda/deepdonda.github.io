@@ -4,6 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="css/register.css">
  <link rel="stylesheet" type="text/css" href="css/navigation.css">
+ 
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
@@ -18,7 +19,7 @@
   <a href="BOOK_THIS_APARTMENT.html">book property</a>
   <a href="review_property.html">review property</a>
   <a href="uploadproperty.html">upload property</a>
-  <a href="list_of_property.html">Find property</a>
+  <a href="list_of_reuest_for_property.html" >list of request for property</a>
   <a href="bookmarks_property.html">bookmarks</a>
   <a href="aboutme.html">add personal detail</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -39,16 +40,22 @@ function myFunction() {
 <form method="POST">
     
   <div class="container">
-    <h2 align="center" ><font color="#116466"> Property renter</h2>
+    <h2 align="center" >Property renter</h2>
     <p align="center">Please Fill in this Form to create an account.</p>
-    <hr>
+    
 
     <label for="username"><b>Username</b></label>
     <input type="text" class="text-line" placeholder="Enter Your Username" name="username" required>
 
     <label for="password"><b>Password</b></label>
-    <input type="password" class="text-line" placeholder="Enter your Password" name="password" required>
-
+    <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" class="text-line" placeholder="Enter your Password"  required>
+    <div id="message">
+  <h3>Password must contain the following:</h3>
+  <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+  <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+  <p id="number" class="invalid">A <b>number</b></p>
+  <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+</div>
     <label for="mobileno"><b>Mobile-No</b></label>
     <input type="text" class="text-line" placeholder="Enter Your Mobile-No" name="mobileno" required>
     
@@ -58,9 +65,12 @@ function myFunction() {
     
     <button type="submit" class="registerbtn" name="submit" value="submit">Register</button>
     <p>Already have an account? <a href="normallogin.html">Login</a>.</p>
-  </div></font>
+  </div>
+  
 </form>
 
+    
+				<script src="js/register.js"></script>
 </body>
 </html>
 

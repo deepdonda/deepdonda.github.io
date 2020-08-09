@@ -9,78 +9,101 @@ and open the template in the editor.
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/uploadproperty.css">
+        <link rel="stylesheet" type="text/css" href="css/navigation.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
     </head>
     <body>
-        <a href="index.html">Home page</a>|<a href="normallogin.html">login</a>|<br><br>
-       <center> <h1>Upload property detail:</h1>
+       <div class="header">
+        <h2>property renter</h2>
+        <p>Where Dreams Come Home</p>
+       
+            <div class="topnav" id="myTopnav">
+  <a href="index.html" >Home</a>
+  <a href="normallogin.html" >Log in</a>
+  <a href="BOOK_THIS_APARTMENT.html">book property</a>
+  <a href="review_property.html" >review property</a>
+  <a href="uploadproperty.html" class="active">upload property</a>
+   <a href="list_of_reuest_for_property.html" >list of request for property</a>
+  <a href="bookmarks_property.html">bookmarks</a>
+  <a href="aboutme.html">add personal detail</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+         <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+       </div>
+<div class="row">  
+            <div class="column" ></div>
+            <div class="column1">
         <form >
-            <table border="0">
-                
-                <tbody>
-                    <tr>
-                        <td>owner name:</td>
-                        <td><input type="text" name="ownername" id="ownername"></td>
-                    </tr>
-                    <tr>
-                        <td>type of property:</td>
-                        <td>
-                            <select name="typeofproperty" id="typeofproperty">
+            <center> <h1>Upload property detail:</h1></center>
+           
+                      <h3> <b>owner name:</b></h3>
+                        <input type="text" class="text-line1" name="ownername" id="ownername">
+                   
+                       <h3> <b>type of property:</b></h3>
+                       
+                            <select name="typeofproperty" class="text-line1" id="typeofproperty">
                                 <option>Apartment</option>
                                 <option>Flat</option>
                             </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>number of room:</td>
-                        <td><input type="text" name="room" id="room"></td>
-                    </tr>
-                    <tr>
-                        <td>number of bathroom:</td>
-                        <td><input type="text" name="bathroom" id="bathroom"></td>
-                    </tr>
-                    <tr>
-                        <td>security deposit:</td>
-                        <td>
-                            <input type="text" name="securitydeposit" id="securitydeposit">
+                        
+                       <h3> <b> number of room:</b></h3>
+                        <input type="text" class="text-line1"  name="room" id="room">
+                   
+                       <h3> <b> number of bathroom:</b></h3>
+                        <input type="text" class="text-line1" name="bathroom" id="bathroom">
+                   
+                       <h3> <b> security deposit:</b></h3>
+                        
+                            <input type="text" class="text-line1" name="securitydeposit" id="securitydeposit">
                             
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Address of property:</td>
-                        <td>
-                            <textarea name="address" id="address" rows="4" cols="20">
+                        
+                   
+                       <h3> <b> Address of property:</b></h3>
+                        
+                            <textarea name="address" class="text-line1" id="address" rows="4" cols="20">
                             </textarea>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>city:</td>
-                        <td><input type="text" name="city" id="city"></td>
-                    </tr>
-                    <tr>
-                        <td>Description:</td>
-                        <td>
-                            <textarea name="description" id="description" rows="4" cols="20">
+                        
+                    
+                       <h3> <b> city:</b></h3>
+                        <input type="text" class="text-line1" name="city" id="city">
+                    
+                      <h3> <b>  Description:</b></h3>
+                        
+                            <textarea name="description" class="text-line1" id="description" rows="4" cols="20">
                             </textarea>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>image:</td>
-                        <td>
-                            <input type="file" name="image" id="image" >
-                            
-                        </td>
-                    </tr>
-                    <tr>
                        
-                        <td colspan="2">
+                    
+                      <h3> <b>  image:</b></h3>
+                        
+                            <input type="file" class="text-line1" name="image" id="image" >
+                            
+                        
+                    
+                       
+                   
                             <br><br>
-                            <center><button type="submit" name="submit" value="submit">upload</button></center>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+                            <center><button type="submit" class="but" name="submit" value="submit">upload</button>
+                     
+                  
+              
+            
 
-        </form>
+        </form></div>
+            <div class="column2"></div>
+</div>
         </center>
     </body>
 </html>

@@ -9,13 +9,156 @@ and open the template in the editor.
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/list_of_request.css">
+        <link rel="stylesheet" type="text/css" href="css/navigation.css">
     </head>
     <body>
-        <a href="index.html">Home page</a>|<a href="normallogin.html">login</a>|<br><br>
-    <center>
-        <h1>List of request</h1>
-        <br><br>
-        <h3>no one request for this property still now for rent.</h3>
-    </center>
+        <div class="header">
+<h2>property renter</h2>
+<p>Where Dreams Come Home</p>
+    
+       <div class="topnav" id="myTopnav">
+  <a href="index.html" >Home</a>
+  <a href="normallogin.html" >Log in</a>
+  <a href="BOOK_THIS_APARTMENT.html">book property</a>
+  <a href="review_property.html" >review property</a>
+  <a href="uploadproperty.html">upload property</a>
+  <a href="list_of_reuest_for_property.html" class="active">list of request for property</a>
+  <a href="bookmarks_property.html">bookmarks</a>
+  <a href="aboutme.html">add personal detail</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+         <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+</script>
+</div>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<div class="row">  
+            <div class="column" align="right">
+               
+<div class="w3-container">
+  
+  <ul class="w3-ul w3-card-4">
+    <li class="w3-bar">
+      <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+      <img src="img_avatar2.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+      <div class="w3-bar-item">
+        <span class="w3-large" id=1 onclick=showdetail()>Deep                               </span>
+        <button id="a" onClick="showdetail(event)">show detail</button><br>
+        
+      </div>
+    </li>
+
+    <li class="w3-bar">
+      <span onclick=removeItem() class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+      <img src="img_avatar5.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+      <div class="w3-bar-item">
+        <span class="w3-large"  onclick=showdetail()>Meet                             </span>
+        <button id="b" onClick="showdetail(event)">show detail</button><br>
+       
+      </div>
+    </li>
+
+    <li class="w3-bar">
+      <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+      <img src="img_avatar6.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+      <div class="w3-bar-item">
+        <span class="w3-large"  onclick=showdetail()>Urvish</span>
+        <button id="c" onClick="showdetail(event)">show detail</button><br><br>
+    
+      </div>
+    </li>
+  </ul>
+</div>
+                
+            </div>
+    <div class="column1"><table border="0">
+                    
+                    <tbody>
+                        <tr>
+                            <td>Full name:</td>
+                            <td><p id="demo1"></p></td>
+                        </tr>
+                        <tr>
+                            <td>Phone number:</td>
+                            <td><p id="demo2"></p></td>
+                        </tr>
+                        <tr>
+                            <td>E-mail address:</td>
+                            <td><p id="demo3"></p></td>
+                        </tr>
+                        <tr>
+                            <td>Family member:</td>
+                            <td><p id="demo4"></p></td>
+                        </tr>
+                        <tr>
+                            <td>Children:</td>
+                            <td><p id="demo5"></p></td>
+                        </tr>
+                        <tr>
+                            <td>your message:</td>
+                            <td><p id="demo6"></p></td>
+                        </tr>
+                    </tbody>
+                </table>
+        
+    </div></div>
+<script>
+    let a = new Array('Deep donda', '6353694040', 'deepdonda007@gmail.com','5','0','I like your property.I want this property for reant.');
+    let b = new Array('meet Vagasiya', '6353694040', 'meet@gmail.com','5','0','I like your property.I want this property for reant.');
+     let c = new Array('Uravish devani', '6353694040', 'uravish@gmail.com','5','0','I like your property.I want this property for reant.');
+function showdetail(e){
+ var   x=e.target.id;
+ if(x==="a")
+ {
+document.getElementById("demo1").innerHTML =a[0];
+document.getElementById("demo2").innerHTML =a[1];
+document.getElementById("demo3").innerHTML =a[2];
+document.getElementById("demo4").innerHTML =a[3];
+document.getElementById("demo5").innerHTML =a[4];
+document.getElementById("demo6").innerHTML =a[5];
+ }
+ else if(x==="b")
+ {
+document.getElementById("demo1").innerHTML =b[0];
+document.getElementById("demo2").innerHTML =b[1];
+document.getElementById("demo3").innerHTML =b[2];
+document.getElementById("demo4").innerHTML =b[3];
+document.getElementById("demo5").innerHTML =b[4];
+document.getElementById("demo6").innerHTML =b[5];
+ }
+  else if(x==="c")
+ {
+document.getElementById("demo1").innerHTML =c[0];
+document.getElementById("demo2").innerHTML =c[1];
+document.getElementById("demo3").innerHTML =c[2];
+document.getElementById("demo4").innerHTML =c[3];
+document.getElementById("demo5").innerHTML =c[4];
+document.getElementById("demo6").innerHTML =c[5];
+ }
+
+}
+function reply_click(e)
+{
+    
+    
+}
+
+
+</script>
+
+
+
     </body>
 </html>
