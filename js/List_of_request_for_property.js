@@ -7,8 +7,10 @@
 
     let a = new Array('Deep donda', '6353694040', 'deepdonda007@gmail.com','5','0','I like your property.I want this property for reant.');
     let b = new Array('meet Vagasiya', '6353694040', 'meet@gmail.com','5','0','I like your property.I want this property for reant.');
-     let c = new Array('Uravish devani', '6353694040', 'uravish@gmail.com','5','0','I like your property.I want this property for reant.');
+    let c = new Array('Uravish devani', '6353694040', 'uravish@gmail.com','5','0','I like your property.I want this property for reant.');
 function showdetail(e){
+    show();
+    
  var   x=e.target.id;
  if(x==="a")
  {
@@ -42,5 +44,11 @@ document.getElementById("demo6").innerHTML =c[5];
 function reply_click(e)
 {
     
+    
+}
+function show()
+{
+    $("div.column1").show();
+    $("table").show();
     
 }
