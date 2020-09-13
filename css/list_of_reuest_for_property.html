@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/list_of_request.css">
+        <link rel="stylesheet" type="text/css" href="css/navigation.css">
+        <link rel="stylesheet" type="text/css" href="css/aos.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="header">
+<h2>property renter</h2>
+<p>Where Dreams Come Home</p>
+    
+       <div class="topnav" id="myTopnav">
+  <a href="index.html" >Home</a>
+  <a href="normallogin.html" >Log in</a>
+  <a href="BOOK_THIS_APARTMENT.html">book property</a>
+  <a href="review_property.html" >review property</a>
+  <a href="uploadproperty.html">upload property</a>
+  <a href="list_of_reuest_for_property.html" class="active">list of request for property</a>
+  <a href="bookmarks_property.html">bookmarks</a>
+  <a href="aboutme.html">add personal detail</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+         <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+$(document).ready(function(){
+  $("table").hide();
+  $("div.column1").hide();
+   
+   
+});
+
+</script>
+</div>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<div class="row">  
+            <div class="column" align="right">
+               
+<div class="w3-container">
+  
+  <ul class="w3-ul w3-card-4" data-aos="fade-down" data-aos-duration="4000">
+    <li class="w3-bar">
+      <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+      <img src="img_avatar2.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+      <div class="w3-bar-item">
+        <span class="w3-large" id=1 onclick=showdetail()>Deep                               </span>
+        <button id="a" onClick="showdetail(event)">show detail</button><br>
+        
+      </div>
+    </li>
+
+     <li class="w3-bar" data-aos="fade-down" data-aos-duration="4000">
+      <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+      <img src="img_avatar6.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+      <div class="w3-bar-item">
+        <span class="w3-large"  onclick=showdetail()>Meet</span>
+        <button id="b" onClick="showdetail(event)">show detail</button><br><br>
+       
+      </div>
+    </li>
+
+    <li class="w3-bar" data-aos="fade-down" data-aos-duration="4000">
+      <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+      <img src="img_avatar6.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+      <div class="w3-bar-item">
+        <span class="w3-large"  onclick=showdetail()>Urvish</span>
+        <button id="c" onClick="showdetail(event)">show detail</button><br><br>
+    
+      </div>
+    </li>
+  </ul>
+</div>
+                
+            </div>
+    <div class="column1"><table border="1" data-aos="fade-up" data-aos-duration="4000">
+                    
+                    <tbody>
+                        <tr>
+                            <td>Full name:</td>
+                            <td><p id="demo1"></p></td>
+                        </tr>
+                        <tr>
+                            <td>Phone number:</td>
+                            <td><p id="demo2"></p></td>
+                        </tr>
+                        <tr>
+                            <td>E-mail address:</td>
+                            <td><p id="demo3"></p></td>
+                        </tr>
+                        <tr>
+                            <td>Family member:</td>
+                            <td><p id="demo4"></p></td>
+                        </tr>
+                        <tr>
+                            <td>Children:</td>
+                            <td><p id="demo5"></p></td>
+                        </tr>
+                        <tr>
+                            <td>your message:</td>
+                            <td><p id="demo6"></p></td>
+                        </tr>
+                    </tbody>
+                </table>
+        
+    </div></div>
+<script src="js/List_of_request_for_property.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="js/aos.js"></script>
+        <script type="text/javascript">
+            AOS.init({
+                easing:'easing-in-out-sine'
+            });
+        </script>
+
+
+
+    </body>
+</html>
