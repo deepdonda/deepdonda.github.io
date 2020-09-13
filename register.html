@@ -6,6 +6,8 @@
  <link rel="stylesheet" type="text/css" href="css/navigation.css">
  
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
 
 </head>
 <body >
@@ -38,12 +40,12 @@ function myFunction() {
 </script>
          </div>
 <form method="POST">
-    
-  <div class="container">
+    <div class="row"> 
+         <div class="col-sm-0 col-md-1 col-lg-1"></div >
+            <div class="col-sm-12 col-md-8 col-lg-8">
+  <div >
     <h2 align="center" >Property renter</h2>
     <p align="center">Please Fill in this Form to create an account.</p>
-    
-
     <label for="username"><b>Username</b></label>
     <input type="text" class="text-line" placeholder="Enter Your Username" name="username" required>
 
@@ -68,7 +70,9 @@ function myFunction() {
   </div>
   
 </form>
-
+    </div>
+         <div class="col-sm-0 col-md-1 col-lg-1"></div >
+</div>
     
 				<script src="js/register.js"></script>
 </body>

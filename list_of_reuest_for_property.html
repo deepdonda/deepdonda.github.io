@@ -11,6 +11,8 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/list_of_request.css">
         <link rel="stylesheet" type="text/css" href="css/navigation.css">
+        <link rel="stylesheet" type="text/css" href="css/aos.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body>
         <div class="header">
@@ -39,6 +41,12 @@ function myFunction() {
     x.className = "topnav";
   }
 }
+$(document).ready(function(){
+  $("table").hide();
+  $("div.column1").hide();
+   
+   
+});
 
 </script>
 </div>
@@ -49,7 +57,7 @@ function myFunction() {
                
 <div class="w3-container">
   
-  <ul class="w3-ul w3-card-4">
+  <ul class="w3-ul w3-card-4" data-aos="fade-down" data-aos-duration="4000">
     <li class="w3-bar">
       <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
       <img src="img_avatar2.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
@@ -60,17 +68,17 @@ function myFunction() {
       </div>
     </li>
 
-    <li class="w3-bar">
-      <span onclick=removeItem() class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
-      <img src="img_avatar5.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+     <li class="w3-bar" data-aos="fade-down" data-aos-duration="4000">
+      <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+      <img src="img_avatar6.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
       <div class="w3-bar-item">
-        <span class="w3-large"  onclick=showdetail()>Meet                             </span>
-        <button id="b" onClick="showdetail(event)">show detail</button><br>
+        <span class="w3-large"  onclick=showdetail()>Meet</span>
+        <button id="b" onClick="showdetail(event)">show detail</button><br><br>
        
       </div>
     </li>
 
-    <li class="w3-bar">
+    <li class="w3-bar" data-aos="fade-down" data-aos-duration="4000">
       <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
       <img src="img_avatar6.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
       <div class="w3-bar-item">
@@ -83,7 +91,7 @@ function myFunction() {
 </div>
                 
             </div>
-    <div class="column1"><table border="0">
+    <div class="column1"><table border="1" data-aos="fade-up" data-aos-duration="4000">
                     
                     <tbody>
                         <tr>
@@ -115,6 +123,15 @@ function myFunction() {
         
     </div></div>
 <script src="js/List_of_request_for_property.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="js/aos.js"></script>
+        <script type="text/javascript">
+            AOS.init({
+                easing:'easing-in-out-sine'
+            });
+        </script>
 
 
 
