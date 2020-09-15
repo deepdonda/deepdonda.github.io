@@ -23,3 +23,29 @@ $("#3").click(function(){
   $(".c").toggle("slow");
   $("#z").toggle("slow");
 });
+$(".hospital").click(function(){
+     $("iframe:first").replaceWith("<iframe width='100%' height='500' src='https://maps.google.com/maps?q=hospital+near+to+Blossom+Aura,+College+Road,+nadiad,gujarat,india &output=embed' ></iframe>");
+ });
+ $(".temple").click(function(){
+     $("iframe:first").replaceWith("<iframe width='100%' height='500' src='https://maps.google.com/maps?q=tample+near+to+blossom+aura,collage+road,nadiad,gujarat,india &output=embed' ></iframe>");
+ });
+ $(".bank").click(function(){
+     $("iframe:first").replaceWith("<iframe width='100%' height='500' src='https://maps.google.com/maps?q=bank+near+to+Blossom+Aura,+College+Road,+nadiad,gujarat,india &output=embed' ></iframe>");
+ });
+ $(".cinema").click(function(){
+     $("iframe:first").replaceWith("<iframe width='100%' height='500' src='https://maps.google.com/maps?q=cinema+near+to+Blossom+Aura,+College+Road,+nadiad,gujarat,india &output=embed' ></iframe>");
+ });
+ $(".food").click(function(){
+     $("iframe:first").replaceWith("<iframe width='100%' height='500' src='https://maps.google.com/maps?q=restaurant+near+to+Blossom+Aura,+College+Road,+nadiad,gujarat,india &output=embed' ></iframe>");
+ });
+$(".shop").click(function(){
+     $("iframe:first").replaceWith("<iframe width='100%' height='500' src='https://maps.google.com/maps?q=mall+near+to+Blossom+Aura,+College+Road,+nadiad,gujarat,india &output=embed' ></iframe>");
+ });
+$(".train").click(function(){
+     $("iframe:first").replaceWith("<iframe width='100%' height='500' src='https://maps.google.com/maps?q=ralve+station+near+to+Blossom+Aura,+College+Road,+nadiad,gujarat,india &output=embed' ></iframe>");
+ });
+ $(".park").click(function(){
+     $("iframe:first").replaceWith("<iframe width='100%' height='500' src='https://maps.google.com/maps?q=park+near+to+Blossom+Aura,+College+Road,+nadiad,gujarat,india &output=embed' ></iframe>");
+ });
+
+        
