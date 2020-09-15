@@ -1,42 +1,93 @@
 <html>
 <head>
-<title>Contact_Us</title>
-<body>
-    <a href="index.html">Home page</a>|<a href="normallogin.html">login</a>|<br><br>
-<form  >
-<table width="20%"  align="center">
-
-<tr>
-<td colspan=2><center><font size=4><b>Contact_us</b></font></center></td>
-</tr>
-
-
-<tr>
-<td>Full Name:</td>
-<td><input type="text" name="name"></td>
-</tr>
-
-<tr>
-<td>E-Mail:</td>
-<td><input type="text" name="mail" id="email"></td>
-</tr>
-
-<tr>
-<td>Message:</td>
-<td>
-    <textarea name="message" id="massage" rows="4" cols="20">
-    </textarea>
-</td>
-</tr>
-<tr>
-
-    <td colspan="2">
-<center><button type="submit" name="submit" value="submit">submit</button></center>
+    <title>Contact_Us</title>
+    <link rel="stylesheet" type="text/css" href="css/navigation.css">
+    <link rel="stylesheet" type="text/css" href="css/contact_us.css">
     
-</td>
-</tr>
-</table>
+ 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-</form>
+</head>
+<body>
+       
+       
+        <div class="header">
+        <h1>Property rental</h1>
+        <p>Where Dreams Come Home</p>
+       
+         <div class="topnav" id="myTopnav">
+  <a href="index.html" >Home</a>
+  <a href="normallogin.html">Log in</a>
+  <a href="BOOK_THIS_APARTMENT.html">book property</a>
+  <a href="review_property.html">review property</a>
+  <a href="uploadproperty.html">upload property</a>
+  <a href="list_of_reuest_for_property.html" >list of request for property</a>
+  <a href="bookmarks_property.html">bookmarks</a>
+  <a href="aboutme.html">add personal detail</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+         </div>
+         <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+ 
+<div class="row">
+    <div class="col-sm-0 col-md-4 col-lg-4"></div>
+    
+     <div class="col-sm-12 col-md-4 col-lg-4" class="a">
+         <div class="b">
+         <form method="get">
+        <table width="20%"  align="center">
+
+            <tr>
+                <td colspan=2><center><h4><b>Contact us</b></h4></center></td>
+            </tr>
+
+
+            <tr>
+                <td>Full Name:</td>
+                    <td><input type="text" class="text-line1" name="name"></td>
+            </tr>
+
+            <tr>
+                <td>E-Mail:</td>
+                <td><input type="text" class="text-line1" name="mail" id="email"></td>
+            </tr>
+
+            <tr>
+                <td>Message:</td>
+            <td>
+                <textarea name="message" class="text-line1" id="massage" rows="4" cols="20">
+            </textarea>
+            </td>
+            </tr>
+            <tr>
+
+                <td colspan="2">
+                    <center><button type="submit"  class="button" name="submit" value="submit">submit</button></center>
+    
+                </td>
+            </tr>
+        </table>
+             </form>
+     </div>
+     
+    </div>
+    <div class="col-sm-0 col-md-4 col-lg-4"></div>
+</div>
+     
+
+
+   
 </body>
 </html>
