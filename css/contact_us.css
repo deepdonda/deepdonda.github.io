@@ -1,0 +1,99 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14 Sep, 2020, 2:31:05 PM
+    Author     : User
+*/
+
+
+.header {
+    
+  padding: 5px;
+  padding-top: 5px;
+  text-align: center;
+  margin-bottom: 25px;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}
+form
+{
+    
+  width: 95%; 
+  border-radius: 10px;
+  background: #1abc9c;
+  position: relative;
+  margin: auto;
+  padding: 20px 20px 20px;
+  font:  small-caps bold 12px/30px Georgia, serif;
+  
+
+}
+
+table{
+    font-size: 18px;
+    width: 80%;
+    position: relative;
+    margin: auto;
+    alignment-adjust: central;
+}
+
+
+
+
+.button
+{
+    padding: 10px;
+    position: relative;
+    width: 60%;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    background-color:#FFCB9A ;
+    height: 40px;
+    
+    
+}
+.button:hover{
+    background-color: #D9B08C
+}
+.text-line1 {
+    background-color: transparent;
+    color: black;
+    outline: none;
+    outline-style: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #D9B08C 2px;
+    padding: 3px 10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.header {
+  padding: 5px;
+  text-align: center;
+  margin-bottom: 25px;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}
+h1{
+    padding: 25px;
+}
+
+.b{
+    
+    border: 10px #1abc9c solid;
+     border-radius: 10px;
+  
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #f2f2f2;
+}
+h4{
+    padding-bottom:   25px;
+}

@@ -1,0 +1,109 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 15 Sep, 2020, 2:23:43 PM
+    Author     : User
+*/
+
+.hospital_text {
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-top: 5px;
+    color: rgb(94, 35, 220);
+    width: 100%;
+}
+.hospital_image {
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px 0px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    width: 50px;
+    border: 1px solid rgb(94, 35, 220);
+   background: url(//c.housingcdn.com/s/assets/healthcareLogo.312169ef.svg) center center no-repeat;
+    opacity: 1;
+}
+ 
+.park_image {
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px 0px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    width: 50px;
+    border: 1px solid rgb(94, 35, 220);
+    background: url(//c.housingcdn.com/s/assets/parksLogo.51bf258c.svg) center center no-repeat;
+    opacity: 1;
+}
+.cinema_image {
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px 0px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    width: 50px;
+    border: 1px solid rgb(94, 35, 220);
+    background: url(//c.housingcdn.com/s/assets/cinemaLogo.02b2776d.svg) center center no-repeat;
+    opacity: 1;
+}
+.food_image {
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px 0px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    width: 50px;
+    border: 1px solid rgb(94, 35, 220);
+    background: url(//c.housingcdn.com/s/assets/foodLogoLogo.182d2a8d.svg) center center no-repeat;
+    opacity: 1;
+}
+.bank_image {
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px 0px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    width: 50px;
+     border: 1px solid rgb(94, 35, 220);
+    background: url(//c.housingcdn.com/s/assets/bankLogo.8768bda3.svg) center center no-repeat;
+    opacity: 1;
+}
+.shop_image {
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px 0px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    width: 50px;
+    border: 1px solid rgb(94, 35, 220);
+    background: url(//c.housingcdn.com/s/assets/shoppingLogo.912b85dd.svg) center center no-repeat;
+    opacity: 1;
+}
+.temple_image{
+    border-radius: 50%;
+    width: 100%;
+    height : 100%;
+}

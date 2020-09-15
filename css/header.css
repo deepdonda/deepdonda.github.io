@@ -108,3 +108,7 @@ span.r {
   color: white;
   font-size: 30px;
 }
+.col-sm-12 col-md-6 col-lg-6
+{
+    margin-bottom: 50px;;
+}
